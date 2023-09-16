@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="css/style.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">                                 
+</head>
+<body>
+    
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><a href="" class="cordi-tec"><h1>Coordinador tecnico</h1></a></li>
+                <li><a href=""><img src="images/star-line.png" alt=""></a></li>
+                <li><a href="" class="private-nav"><img class="img-lock" src="images/lock-line.png" alt="">Private</a></li>
+                <li><a href="" class="board-nav"><img class="img-dash" src="images/dashboard-line.png" alt="">Board</a></li>
+                <li><button id="cerrar" class="abrir-menu" ><img src="images/arrow-down-s-line.png" alt=""></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="kanban-block kanban-form">
+        <strong class="kanban-form-title">Tarea</strong>
+
+        <div class="container-inputs">
+                <strong class=""strong-input"">Nombre Tarea: </strong>
+            <input type="text" id="tarea-nombre" class="input-text">
+            
+            <strong class="strong-input">Descripción Tarea: </strong>
+            <textarea type="text" id="tarea-descripcion" class="textarea-text" rows="3"></textarea>
+
+            <strong class="strong-input">Responsable Tarea: </strong>
+            <input type="text" id="tarea-responsable" class="input-text">
+        </div>
+
+        <input class="btn-crear" id="btn-crear-editar" type="submit" value="Crear Tarea" onclick="crearTarea(event)"/>
+    </div>
+
+    <div class="tablas">
+        <div class="tareas" id="tareas-u" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-reng">
+                <h1>To Do</h1>
+            </div>
+        </div>
+        <div class="tareas" id="tareas-d" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-reng">
+                <h1>Doing</h1>
+            </div>
+        </div>
+        <div class="tareas" id="tareas-o" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-reng">
+                <h1>Done</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
