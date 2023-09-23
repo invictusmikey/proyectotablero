@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="style.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">                                 
+</head>
+<body>
+    
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><a href=""><h1>Notes</h1></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="note">
+        
+        <strong class="tarea">Tarea</strong>
+
+        <div class="name_note">
+                <strong class=""strong-input"">Nombre Tarea: </strong>
+            <input class="input_note" type="text" id="tarea-nombre" class="input-text">
+            
+            <strong class="responsable_note">Descripción Tarea: </strong>
+            <textarea class="input_note" type="text" id="tarea-descripcion" class="textarea-text" rows="3"></textarea>
+
+            <strong class="describe_note">Responsable Tarea: </strong>
+            <input class="input_note" type="text" id="tarea-responsable" class="input-text">
+        </div>
+
+        <input class="create" id="btn-crear-editar" type="submit" value="Crear Tarea" onclick="crearTarea(event)"/>
+    </div>
+
+<div class="tareass">
+    <div class="tablas">
+        <div class="tareas" id="to-do" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-reng">
+                <h1>To Do</h1>
+            </div>
+        </div>
+        <div class="tareas" id="doing" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-reng">
+                <h1>Doing</h1>
+            </div>
+        </div>
+        <div class="tareas" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-reng">
+                <h1>Done</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
